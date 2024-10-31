@@ -87,8 +87,12 @@ public class SquaremapWaystones implements ModInitializer {
     }
 
     String waystoneName = waystone.getWaystoneName();
+    String waystoneOwner = waystone.getEntity().getOwnerName();
+    String waystoneTooltip = waystoneName + "<br>(" + waystoneOwner + ")";
+
     MarkerOptions waystoneOptions = MarkerOptions.builder()
                                                  .hoverTooltip(waystoneName)
+                                                 .clickTooltip(waystoneTooltip)
                                                  .fillOpacity(1.0).strokeOpacity(1.0)
                                                  .build();
 

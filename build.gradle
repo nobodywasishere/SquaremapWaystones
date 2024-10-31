@@ -64,7 +64,9 @@ processResources {
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
                 "minecraft_version": project.minecraft_version,
-                "loader_version": project.loader_version
+                "loader_version": project.loader_version,
+                "wraith_waystones_version": project.wraith_waystones_version,
+                "squaremap_version": project.squaremap_version
     }
 }
 
