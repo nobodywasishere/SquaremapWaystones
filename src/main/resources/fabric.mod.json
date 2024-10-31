@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "squaremapwaystones",
+  "version": "${version}",
+  "name": "SquaremapWaystones",
+  "description": "Adds support for Wraith Waystones to Squaremap (Fabric)",
+  "authors": [
+    "nobodywasishere"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "fabric_waystones_icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.eowyn.squaremapwaystones.SquaremapWaystones"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
